@@ -1,9 +1,10 @@
 body{
 	margin:0;
 	color:#444;
-	background:#F0C27B;
+	/*background:#F0C27B;*/
 	font:400 16px/18px Roboto, sans-serif;
 }
+
 *,:after,:before{box-sizing:border-box}
 .pull-left{float:left}
 .pull-right{float:right}
@@ -17,14 +18,14 @@ body{
 	bottom:0;
 	padding:15px;
 	position:fixed;
-	background:-webkit-linear-gradient(90deg, #F0C27B 10%, #4B1248 90%);
-	background:-webkit-linear-gradient(left, #F0C27B 10%, #4B1248 90%);
-	background:linear-gradient(90deg, #F0C27B 10%, #4B1248 90%);
+/*	background:-webkit-linear-gradient(90deg, #F0C27B 10%, #4B1248 90%);
+	background:-webkit-linear-gradient(0deg, #F0C27B 10%, #4B1248 90%);
+	background:linear-gradient(90deg, #F0C27B 10%, #4B1248 90%);*/
 }
 .accordion{
 	width:100%;
 	margin:auto;
-	max-width:280px;
+	max-width:380px;
 	overflow:hidden;
 	border-radius:3px;
 	background:#B7AFA3;
@@ -106,27 +107,133 @@ body{
 	font-weight:300;
 	margin-bottom:0;
 }
+.sabbir{
+	width:120px;
+	height:120px;
+	margin:auto;
+	border-radius:50%;
+	position:relative;
+	/*border:2px solid #fff;*/
+	box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2);
+	background: center;
+	
+}
+.details{
+	font-size:.9em;
+	font-family: verdana;
+}
+#email{
+	color:blue;
+}
+
+.call{
+    width:20px;
+	height:20px;
+	margin:auto;
+	overflow:hidden;
+	border-radius:50%;
+	/*border:2px solid #fff;*/
+	box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2);
+	background: center;
+
+}
+#contact a:hover{
+	background: none;
+	box-shadow: none;
+}
+#tb{
+	margin:auto;
+}
+#fb{
+
+	width: 60px;
+	height: 60px;
+	margin-right:-15px;
+	margin-bottom: -10px;
+	
+}
+#tw{
+	width: 60px;
+	height: 60px;
+	margin-left: -15px;	
+	margin-bottom: -10px;
+}
+#ins{
+
+	width: 60px;
+	height: 60px;
+	margin-right:-15px;
+	margin-top: -10px;
+	
+}
+#in{
+
+	width: 60px;
+	height: 60px;
+	margin-left:-15px;
+	margin-top: -10px;
+	
+}
+a:hover{
+	text-decoration: none;
+}
+.imgsize{
+	width: 80px;
+	height: 80px;
+	margin:auto;
+	background: center;
+
+}
+
+.gmail{
+    width:20px;
+	height:20px;
+	margin:auto;
+	overflow:hidden;
+	border-radius:50%;
+	/*border:2px solid #fff;*/
+	box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2);
+	background: center;
+
+}
+
+.location{
+    width:20px;
+	height:20px;
+	margin:auto;
+	/*overflow:hidden;
+	border-radius:50%;*/
+	/*border:2px solid #fff;*/
+	/*box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2);
+	background: center;*/
+
+}
+
+/*
 .accordion .about-me .photo{
-	width:95px;
-	height:95px;
+	width:25px;
+	height:25px;
 	margin:auto;
 	overflow:hidden;
 	border-radius:50%;
 	position:relative;
 	border:4px solid #fff;
 	box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2);
-	background:url(https://s.gravatar.com/avatar/24a65a47147cddf5b270bc9f609ffa2a?s=90) no-repeat center;
+	background: url(img/sabbir.jpg);
+	no-repeat center;
 }
+
 .accordion .about-me .photo .photo-overlay{
 	top:0;
 	left:0;
 	right:0;
 	bottom:0;
 	opacity:0;
-	visibility:hidden;
+	visibility:hidden; 
 	position:absolute;
 	background:rgba(0,0,0,.4);
 }
+
 .accordion .about-me .photo .photo-overlay .plus{
 	top:50%;
 	left:50%;
@@ -156,7 +263,7 @@ body{
 	-webkit-transform:scale(1) rotate(90deg);
 	        transform:scale(1) rotate(90deg);
 }
-
+*/
 .accordion .about-me .social-link{
 	top:0;
 	left:0;
@@ -232,7 +339,7 @@ body{
 	-webkit-filter:blur(2px);
 	filter:blur(2px);
 }
-
+/*
 .accordion .chat .user:not(:last-child){
 	margin-bottom:10px;
 }
@@ -300,7 +407,7 @@ body{
 .accordion .chat .user.user-khadkamhn .text-msg{
 	background:#dce2e4;
 }
-
+*/
 .accordion .invite{
 	text-align:center;
 }
@@ -311,17 +418,15 @@ body{
 	font-size:24px;
 	font-family:Pacifico;
 }
-.accordion .invite .btn{
-	color:#eee;
-	font-weight:500;
-	background:#ccc;
-	padding:10px 15px;
-	border-radius:2px;
-	background:#f15e95;
-	display:inline-block;
-	text-transform:uppercase;
-}
-.accordion .invite .btn:hover{
-	box-shadow:none;
-	background:#cb386f;
+.btn{
+	width:100px;
+	height:40px;
+	border: 2px solid white;
+	color:white;
+	font-weight: bold;
+	background: #f15e95;
+	margin: auto;
+	text-align: center;
+	padding-top:10px;
+	border-radius: 5px;
 }
